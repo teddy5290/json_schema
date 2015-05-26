@@ -1,135 +1,31 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "dancer rotation",
-	"description": "rotaion data of 14 nodes",
+    "title": "performer rotation",
+	"description": "rotaion data of the performer",
     "type": "object",
     "properties": {
-        "RightHand": {
-            "type": "object",
+	"performerId": {
+		"type": "number"
+		},
+        "rotation": {
+		"title": "rotation data",
+		"type": "array",
+		"items":{
+			"title":"node",
+			"type": "object",
 			"properties": {
-				"x": {"type": "integer"},
-				"y": {"type": "integer"},
-				"z": {"type": "integer"}
-			},
-			"required": ["x", "y", "z"]
-        },
-        "RightForeArm": {
-            "type": "object",
-			"properties": {
-				"x": {"type": "integer"},
-				"y": {"type": "integer"},
-				"z": {"type": "integer"}
-			},
-			"required": ["x", "y", "z"]
-        },
-		"RightArm": {
-            "type": "object",
-			"properties": {
-				"x": {"type": "integer"},
-				"y": {"type": "integer"},
-				"z": {"type": "integer"}
-			},
-			"required": ["x", "y", "z"]
-        },
-		"LeftHand": {
-            "type": "object",
-			"properties": {
-				"x": {"type": "integer"},
-				"y": {"type": "integer"},
-				"z": {"type": "integer"}
-			},
-			"required": ["x", "y", "z"]
-        },
-		"LeftForeArm": {
-            "type": "object",
-			"properties": {
-				"x": {"type": "integer"},
-				"y": {"type": "integer"},
-				"z": {"type": "integer"}
-			},
-			"required": ["x", "y", "z"]
-        },
-		"LeftArm": {
-            "type": "object",
-			"properties": {
-				"x": {"type": "integer"},
-				"y": {"type": "integer"},
-				"z": {"type": "integer"}
-			},
-			"required": ["x", "y", "z"]
-        },
-		"RightUpLeg": {
-            "type": "object",
-			"properties": {
-				"x": {"type": "integer"},
-				"y": {"type": "integer"},
-				"z": {"type": "integer"}
-			},
-			"required": ["x", "y", "z"]
-        },
-		"RightLeg": {
-            "type": "object",
-			"properties": {
-				"x": {"type": "integer"},
-				"y": {"type": "integer"},
-				"z": {"type": "integer"}
-			},
-			"required": ["x", "y", "z"]
-        },
-		"RightFoot": {
-            "type": "object",
-			"properties": {
-				"x": {"type": "integer"},
-				"y": {"type": "integer"},
-				"z": {"type": "integer"}
-			},
-			"required": ["x", "y", "z"]
-        },
-		"LeftUpLeg": {
-            "type": "object",
-			"properties": {
-				"x": {"type": "integer"},
-				"y": {"type": "integer"},
-				"z": {"type": "integer"}
-			},
-			"required": ["x", "y", "z"]
-        },
-		"LeftLeg": {
-            "type": "object",
-			"properties": {
-				"x": {"type": "integer"},
-				"y": {"type": "integer"},
-				"z": {"type": "integer"}
-			},
-			"required": ["x", "y", "z"]
-        },
-		"LeftFoot": {
-            "type": "object",
-			"properties": {
-				"x": {"type": "integer"},
-				"y": {"type": "integer"},
-				"z": {"type": "integer"}
-			},
-			"required": ["x", "y", "z"]
-        },
-		"Head": {
-            "type": "object",
-			"properties": {
-				"x": {"type": "integer"},
-				"y": {"type": "integer"},
-				"z": {"type": "integer"}
-			},
-			"required": ["x", "y", "z"]
-        },
-		"Hips": {
-            "type": "object",
-			"properties": {
-				"x": {"type": "integer"},
-				"y": {"type": "integer"},
-				"z": {"type": "integer"}
-			},
-			"required": ["x", "y", "z"]
-        }
-    },
-    "required": ["RightHand", "RightForeArm", "RightArm", "LeftHand", "LeftForeArm", "LeftArm", "RightUpLeg", "RightLeg", "RightFoot", "LeftUpLeg", "LeftLeg", "LeftFoot", "Head", "Hips"]
+				"nodeName":{"type": "string",
+					"description": "the standard body part"},
+				"x": {"type": "number",
+			    	  "description": "the rotation angle of x-axis"},
+				"y": {"type": "number",
+			    	  "description": "the rotation angle of y-axis"},
+				"z": {"type": "number",
+			     	 "description": "the rotation angle of z-axis"}
+				},
+			"required": ["node","x", "y", "z"]
+       		 	}
+    		}
+	},
+  "required": ["performerId","rotation"]
 }
