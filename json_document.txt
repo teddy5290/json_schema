@@ -1,14 +1,13 @@
-{ "RightHand": { "x": 63, "y": 63, "z":63 } 
-, "RightForeArm": { "x": 63, "y": 63, "z":63 } 
-, "RightArm": { "x": 63, "y": 63, "z":63 } 
-, "LeftHand": { "x": 63, "y": 63, "z":63 } 
-, "LeftForeArm": { "x": 63, "y": 63, "z":63 } 
-, "LeftArm": { "x": 63, "y": 63, "z":63 } 
-, "RightUpLeg": { "x": 63, "y": 63, "z":63 } 
-, "RightLeg": { "x": 63, "y": 63, "z":63 } 
-, "RightFoot": { "x": 63, "y": 63, "z":63 } 
-, "LeftUpLeg": { "x": 63, "y": 63, "z":63 } 
-, "LeftLeg": { "x": 63, "y": 63, "z":63 } 
-, "LeftFoot": { "x": 63, "y": 63, "z":63 } 
-, "Head": { "x": 63, "y": 63, "z":63 } 
-, "Hips": { "x": 63, "y": 63, "z":63 } }
+
+{ "performerId":1,
+  "rotation":[
+	{"node":"RightHand","x":10,"y":10,"z":10},{"node":"RightForeArm","x":10,"y":10,"z":10},
+	{"node":"RightArm","x":10,"y":10,"z":10},{"node":"LeftHand","x":10,"y":10,"z":10},
+	{"node":"LeftForeArm","x":10,"y":10,"z":10},{"node":"LeftArm","x":10,"y":10,"z":10},
+	{"node":"RightUpLeg","x":10,"y":10,"z":10},{"node":"RightLeg","x":10,"y":10,"z":10},
+	{"node":"RightFoot","x":10,"y":10,"z":10},{"node":"LeftUpLeg","x":10,"y":10,"z":10},
+	{"node":"LeftLeg","x":10,"y":10,"z":10},{"node":"LeftFoot","x":10,"y":10,"z":10},
+	{"node":"Head","x":10,"y":10,"z":10},
+{"node":"Hips","x":10,"y":10,"z":10}]
+}
+
